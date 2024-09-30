@@ -1,0 +1,6 @@
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Ensure the body takes the full height */
+    background: linear-gradient(to right, #b5768c, #a5bff1); /* Gradient background */
+    color: white; /* Set default text color to white for better contrast */
+  }
