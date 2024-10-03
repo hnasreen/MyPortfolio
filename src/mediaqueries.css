@@ -14,6 +14,97 @@
   }
 }
 
+@media screen and (max-width: 1180px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+    padding: 1rem; /* Add padding for better spacing */
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+    justify-content: center; /* Center containers */
+    gap: 1rem; /* Space between elements */
+  }
+  .details-container {
+    width: 100%; /* Stack cards vertically on smaller screens */
+    max-width: 100%; /* Full width on small screens */
+    box-sizing: border-box; /* Include padding/margin in width */
+  }
+  .project-scroll-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps properly */
+    gap: 2rem; /* Space between cards */
+    overflow: hidden;
+    width: 100%; 
+  }
+  .project-img {
+    /* width: 250px; */
+    max-width: 250px; /* Image adjusts to container width */
+    height: auto; /* Keep aspect ratio */
+  }
+  .btn-container {
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+    flex-direction: column; /* Stack buttons vertically */
+  }
+  .project-btn {
+    width: 100%; /* Ensure buttons fill the available space */
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .icon {
+    height: 1.75rem; /* Scale down icons */
+  }
+
+  /* Fix for the card sizing issue */
+  .project-scroll-container .details-container {
+    flex: 1 1 100%; /* Ensure cards shrink and wrap */
+    max-width: 100%; /* Full width of container */
+    box-sizing: border-box; /* Include padding/margin in width */
+    padding: 1rem; /* Avoid overflowing content */
+  }
+
+  .project-scroll-container .project-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Optional: Limit max width if needed */
+  }
+}
+
 @media screen and (max-width: 768px) {
   #desktop-nav {
     display: none;
@@ -50,13 +141,72 @@
     justify-content: center; /* Center containers */
     gap: 1rem; /* Space between elements */
   }
+  .details-container {
+    width: 100%; /* Stack cards vertically on smaller screens */
+    max-width: 100%; /* Full width on small screens */
+    box-sizing: border-box; /* Include padding/margin in width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    text-align: center;
+  }
+  .project-scroll-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps properly */
+    gap: 2rem; /* Space between cards */
+    overflow: hidden;
+    width: 100%; 
+  }
+  .project-img {
+    width: 250px;
+    /* max-width: 250px;  */
+    height: auto; /* Keep aspect ratio */
+  }
   .btn-container {
-    justify-content: center; /* Center buttons */
+    justify-content: center;
     gap: 1rem; /* Space between buttons */
+    flex-direction: column; /* Stack buttons vertically */
+  }
+  .project-btn {
+    width: 100%; /* Ensure buttons fill the available space */
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+  .section__text__p2 {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .icon {
+    height: 1.75rem; /* Scale down icons */
+  }
+
+  /* Fix for the card sizing issue */
+  .project-scroll-container .details-container {
+    flex: 1 1 100%; /* Ensure cards shrink and wrap */
+    max-width: 100%; /* Full width of container */
+    box-sizing: border-box; /* Include padding/margin in width */
+    padding: 1rem; /* Avoid overflowing content */
+  }
+
+  .project-scroll-container .project-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Optional: Limit max width if needed */
   }
 }
 
+
 @media screen and (max-width: 600px) {
+  /* General Layout Adjustments */
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   #contact,
   footer {
     height: auto; /* Remove fixed height for better flexibility */
@@ -108,139 +258,64 @@
     font-size: 1.25rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .text-container {
     text-align: justify;
     padding: 1rem; /* Add padding to avoid text touching edges */
   }
-}
-
-/* Media Queries for responsive adjustments */
-
-/* Adjust for medium screens */
-@media screen and (max-width: 1024px) {
-  .project-scroll-container {
-    justify-content: center; /* Center cards for medium screens */
-    gap: 1.5rem; /* Reduce gap between cards */
-  }
-
-  .details-container {
-    width: 100%;
-    max-width: 600px; /* Limit max-width for cards */
-    margin-bottom: 2rem;
-  }
-
-  .project-img {
-    max-height: 250px; /* Allow a bit more height for images on medium screens */
-  }
-}
-
-/* Adjust for small screens */
-@media screen and (max-width: 768px) {
-  .details-container {
-    width: 100%; /* Stack cards vertically on smaller screens */
-    max-width: 100%; /* Full width on small screens */
-  }
-
-  .project-scroll-container {
-    flex-direction: column; /* Stack project cards vertically */
-    gap: 2rem; /* Space between cards */
-  }
-
-  .project-img {
-    width: 100%; /* Image adjusts to container width */
-    height: auto; /* Keep aspect ratio */
-  }
-
-  .btn-container {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 1rem; /* Increase gap between buttons */
-  }
-
-
-  .project-btn {
-    width: 100%; /* Ensure buttons fill the available space */
-    padding: 1rem;
-    font-size: 1rem;
-  }
-}
-
-/* Adjust for extra small screens */
-@media screen and (max-width: 480px) {
-  .project-scroll-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .details-container {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-  }
-
-  .project-img {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
-  }
-
-  .btn-container {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .project-btn {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .section__text__p1 {
-    font-size: 1rem;
-  }
-  
-  .title {
-    font-size: 2rem;
-  }
-  
-  .section__text__p2 {
-    font-size: 1.5rem;
-  }
-
-  .icon {
-    height: 1.75rem; /* Scale down icons */
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .section__text__p1 {
-    font-size: 0.9rem;
-  }
-  
-  .title {
-    font-size: 1.75rem;
-  }
-  
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-
   .icon {
     height: 1.5rem; /* Further scale down icons */
   }
-
   .btn {
     padding: 0.5rem 0.75rem;
     width: 100%; /* Buttons take full width on smaller screens */
     max-width: 250px;
   }
 
+  /* Project Section Adjustments */
+  .experience-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Ensure some padding on sides */
+  }
+
+  .project-scroll-container {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure container fits screen */
+  }
+  
+  .details-container {
+    width: 100%; /* Make each project card take full width */
+    padding: 1rem;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem; /* Add margin between project cards */
+  }
+
+  .project-img {
+    width: 100%; /* Ensure image scales down */
+    height: auto;
+    max-width: 300px; /* Set a max width for the images */
+    display:none;
+  }
+
   .btn-container {
-    flex-direction: column; /* Stack buttons vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%; /* Ensure buttons fit container width */
+  }
+
+  .btn {
+    width: 100%; /* Ensure buttons take full width */
   }
 }
+
