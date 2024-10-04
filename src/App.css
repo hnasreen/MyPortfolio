@@ -362,8 +362,8 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(253, 251, 251);
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(253, 251, 251);
 }
 
 .skills-inner-container {
@@ -422,10 +422,18 @@ article .icon {
   display: flex; /* Use flexbox for horizontal layout */
   overflow-x: auto; /* Allow horizontal scrolling */
   overflow-y: hidden; /* Prevent vertical overflow */
-  padding: 10px 0; /* Vertical padding for aesthetics */
+  padding: 20px 0; /* Vertical padding for aesthetics */
   gap: 2rem; /* Space between project cards */
   width: 100%; /* Full width of the container */
-  scroll-snap-type: x mandatory; /* Enable snap scrolling */
+  scroll-snap-type: none; /* Remove scroll snapping */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(253, 251, 251);
+  border-radius: 2rem;
+  padding-left:20px;
+  padding-right:20px;
+  
 }
 
 .details-container {
@@ -486,6 +494,7 @@ article .icon {
   /* Optional: Customize scrollbar */
   .project-scroll-container::-webkit-scrollbar {
     height: 8px;                /* Height of the scrollbar */
+    display: none;
   }
   
   .project-scroll-container::-webkit-scrollbar-thumb {

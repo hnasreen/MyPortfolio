@@ -6,10 +6,10 @@ import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import { IoMdCheckmarkCircle } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import { MdVerified } from "react-icons/md";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import { SiCountingworkspro } from "react-icons/si";
+import { BsShieldFillPlus } from "react-icons/bs";
 
 const App = () => {
   function toggleMenu() {
@@ -147,13 +147,13 @@ const App = () => {
               <div className="details-container">
                 <MdOutlineWorkspacePremium className="icon" style={{color:'black'}}/>
                 <h3 style={{ color: "rgb(59, 57, 57)" }}>Experience</h3>
-                <p>RPA Developer - 4 Months</p>
-                <p>Data Administrator - 1 Year</p>
+                <p>RPA Developer | 4 Months</p>
+                <p>Data Administrator | 1 Year</p>
               </div>
               <div className="details-container">
               <FaGraduationCap className="icon" style={{color:'black'}}/>
                 <h3 style={{ color: "rgb(59, 57, 57)" }}>Education</h3>
-                <p>BCA/MCA</p>
+                <p>BCA | MCA</p>
               </div>
             </div>
             <div className="text-container">
@@ -202,7 +202,7 @@ const App = () => {
                   justifyContent: "center",
                 }}
               >
-                <MdVerified style={{ color: "rgb(59, 57, 57)" }} />
+                <SiCountingworkspro style={{ color: "rgb(59, 57, 57)" }} />
                 <h3 style={{ marginLeft: "8px", color: "rgb(59, 57, 57)" }}>
                   Automation Anywhere A360
                 </h3>
@@ -226,7 +226,7 @@ const App = () => {
                   justifyContent: "center",
                 }}
               >
-                <MdVerified style={{ color: "rgb(59, 57, 57)" }} />
+                <SiCountingworkspro style={{ color: "rgb(59, 57, 57)" }} />
                 <h3 style={{ marginLeft: "8px", color: "rgb(59, 57, 57)" }}>
                   Microsoft Office
                 </h3>
@@ -249,22 +249,26 @@ const App = () => {
             {[
               "ReactJS",
               "MongoDB",
-              "Node JS",
-              "Express JS",
+              "NodeJS",
+              "ExpressJS",
               "Bootstrap",
-              "Tailwind",
+              "Tailwind CSS",
               "Javascript",
-              "HTML",
-              "CSS",
+              "HTML5, CSS",
               "Automation Anywhere A360",
               "MySQL",
               "Microsoft Office",
-              "Communication Skills",
-              "Postman-API",
+              "Postman",
               "GitHub",
+              "Web Application Development",
+              "Frontend & Backend Integration",
+              "RESTful API Management",
+              "Testing & Debugging",
+              "Database Management"
+
             ].map((skill, index) => (
               <article key={skill} className="skill-item">
-                <IoMdCheckmarkCircle className="icon" style={{color:'#535353'}}/>
+                <BsShieldFillPlus className="icon" style={{color:'#3B4D61'}}/>
                 <h3>{skill}</h3>
               </article>
             ))}
