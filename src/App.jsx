@@ -20,7 +20,7 @@ const App = () => {
   }
 
   const openResume = () => {
-    window.open("https://res.cloudinary.com/dcq6ethny/image/upload/v1727697405/portfolio/tisyrtq2irgdnv7pdndi.pdf");
+    window.open("https://res.cloudinary.com/dcq6ethny/image/upload/v1728309539/portfolio/kdo1jjrznrsieamgaj6n.pdf");
   };
 
   const navigateToContact = () => {
