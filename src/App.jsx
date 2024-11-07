@@ -20,7 +20,9 @@ const App = () => {
   }
 
   const openResume = () => {
-    window.open("https://res.cloudinary.com/dcq6ethny/image/upload/v1728309539/portfolio/kdo1jjrznrsieamgaj6n.pdf");
+    window.open(
+      "https://res.cloudinary.com/dcq6ethny/image/upload/v1728309539/portfolio/kdo1jjrznrsieamgaj6n.pdf"
+    );
   };
 
   const navigateToContact = () => {
@@ -49,14 +51,15 @@ const App = () => {
               <a href="#about">About</a>
             </li>
             <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
               <a href="#experience">Experience</a>
             </li>
             <li>
               <a href="#skills">skills</a>
             </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
+           
             <li>
               <a href="#contact">Contact</a>
             </li>
@@ -140,18 +143,25 @@ const App = () => {
         <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="section__pic-container">
-            <img src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/uoojtw7axk6lpurpbars.jpg" alt="Profile picture" className="about-pic" />
+            <img
+              src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/uoojtw7axk6lpurpbars.jpg"
+              alt="Profile picture"
+              className="about-pic"
+            />
           </div>
           <div className="about-details-container">
             <div className="about-containers">
               <div className="details-container">
-                <MdOutlineWorkspacePremium className="icon" style={{color:'black'}}/>
+                <MdOutlineWorkspacePremium
+                  className="icon"
+                  style={{ color: "black" }}
+                />
                 <h3 style={{ color: "rgb(59, 57, 57)" }}>Experience</h3>
                 <p>RPA Developer | 4 Months</p>
                 <p>Data Administrator | 1 Year</p>
               </div>
               <div className="details-container">
-              <FaGraduationCap className="icon" style={{color:'black'}}/>
+                <FaGraduationCap className="icon" style={{ color: "black" }} />
                 <h3 style={{ color: "rgb(59, 57, 57)" }}>Education</h3>
                 <p>BCA | MCA</p>
               </div>
@@ -174,9 +184,312 @@ const App = () => {
             </div>
           </div>
         </div>
-        <MdKeyboardDoubleArrowDown 
-        className="icon arrow"
-        onClick={navigateToExperience} />
+        <MdKeyboardDoubleArrowDown
+          className="icon arrow"
+          onClick={navigateToProjects}
+        />
+      </section>
+
+      <section id="projects">
+        <p className="section__text__p1">Browse My Recent</p>
+        <h1 className="title">Projects</h1>
+        <div className="experience-details-container">
+          <div className="project-scroll-container">
+            {/* Project Card 1 */}
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/jtvr7em6nqhpdk8phlxg.png"
+                  alt="Project 1"
+                  className="project-img"
+                />
+                <div className="project-info">
+                  <h2 className="experience-sub-title project-title" style={{color:'#353535'}}>
+                    Job Seeking App
+                  </h2>
+                  <h5
+                    style={{
+                      color: "#555", // Neutral text color for the technology names
+                      textAlign: "center",
+                      fontFamily: "Arial, sans-serif",
+                      fontWeight: "500",
+                      padding: "12px 24px",
+                      backgroundColor: "#F9F9F9", // Soft lavender background
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Gentle shadow for a modern look
+                      height:'40px',
+                      // textShadow:"2px 2px 4px rgba(0, 0, 0, 0.3)"
+                    }}
+                  >
+                    <span style={{ color: "#555555", fontWeight: "bold"}}>
+                      Technologies used
+                    </span>{" "}
+                    <br />
+                    React.js, Node.js, Express.js, MongoDB
+                  </h5>
+
+                  <div className="btn-container">
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/JobSeekingApp-Frontend",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Frontend Code
+                    </button>
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/JobSeekerApp-Backend",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Backend Code
+                    </button>
+                    <button
+                      style={{ backgroundColor: "#353535", color: "white" }}
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://jobseekingapp-frontend.netlify.app",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 2 */}
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/kurcdxielrepea8qeibk.png"
+                  alt="Project 2"
+                  className="project-img"
+                />
+                <div className="project-info">
+                  <h2 className="experience-sub-title project-title" style={{ color:'#353535'}}>
+                    PickYourStay
+                  </h2>
+                  <h5
+                    style={{
+                      color: "#555", // Neutral text color for the technology names
+                      textAlign: "center",
+                      fontFamily: "Arial, sans-serif",
+                      fontWeight: "500",
+                      padding: "12px 24px",
+                      backgroundColor: "#F9F9F9", // Soft lavender background
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Gentle shadow for a modern look
+                      height:'40px',
+                      // textShadow:"2px 2px 4px rgba(0, 0, 0, 0.3)"
+                    }}
+                  >
+                    <span style={{ color: "#555555", fontWeight: "bold"}}>
+                      Technologies used
+                    </span>{" "}
+                    <br />
+                    React.js, Node.js, Express.js, MongoDB, TailwindCSS
+                  </h5>
+                  <div className="btn-container">
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Booking-App---MERN-Stack---Frontend",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Frontend Code
+                    </button>
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Booking-MERN-Stack-App---Backend",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Backend Code
+                    </button>
+                    <button
+                      style={{ backgroundColor: "#353535", color: "white" }}
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://bookingmernapp.netlify.app/",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 3 */}
+
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/oauyb8xmpkcjkt4f8efp.png"
+                  alt="Project 3"
+                  className="project-img"
+                />
+                <div className="project-info">
+                  <h2 className="experience-sub-title project-title" style={{ color:'#353535'}}>
+                    Ecommerce App
+                  </h2>
+                  <h5
+                    style={{
+                      color: "#555", // Neutral text color for the technology names
+                      textAlign: "center",
+                      fontFamily: "Arial, sans-serif",
+                      fontWeight: "500",
+                      padding: "12px 24px",
+                      backgroundColor: "#F9F9F9", // Soft lavender background
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Gentle shadow for a modern look
+                      height:'40px',
+                      // textShadow:"2px 2px 4px rgba(0, 0, 0, 0.3)"
+                    }}
+                  >
+                    <span style={{ color: "#555555", fontWeight: "bold" }}>
+                      Technologies used
+                    </span>{" "}
+                    <br />
+                    React.js, Node.js, Express.js, MongoDB, Bootstrap
+                  </h5>
+                  <div className="btn-container">
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Ecommerce-MERN-Application---Client",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Frontend Code
+                    </button>
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Ecommerce-MERN-Application---Server",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Backend Code
+                    </button>
+                    <button
+                      style={{ backgroundColor: "#353535", color: "white" }}
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://ecommerceapp-mernstack.netlify.app/",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 4 */}
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img
+                  src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697405/portfolio/iejzpaf2aflvxegtw3sb.png"
+                  alt="Project 4"
+                  className="project-img"
+                />
+                <div className="project-info">
+                  <h2 className="experience-sub-title project-title" style={{ color:'#353535'}}>
+                    Gmail Clone
+                  </h2>
+                  <h5
+                    style={{
+                      color: "#555", // Neutral text color for the technology names
+                      textAlign: "center",
+                      fontFamily: "Arial, sans-serif",
+                      fontWeight: "500",
+                      padding: "12px 24px",
+                      backgroundColor:"#F9F9F9", // Soft lavender background
+                      borderRadius: "10px",
+                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", 
+                      height:'40px',
+                      // textShadow:"2px 2px 4px rgba(0, 0, 0, 0.3)"
+                    }}
+                  >
+                    <span style={{ color: "#555555", fontWeight: "bold" }}>
+                      Technologies used
+                    </span>{" "}
+                    <br />
+                    React.js, Node.js, Express.js, MongoDB, Bootstrap
+                  </h5>
+                  <div className="btn-container">
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Capstone-Project-Gmail-Clone-Front-End",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Frontend Code
+                    </button>
+                    <button
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://github.com/hnasreen/Capstone-Project---Gmail-Clone---Backend",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Backend Code
+                    </button>
+                    <button
+                      style={{ backgroundColor: "#353535", color: "white" }}
+                      className="btn btn-color-2 project-btn"
+                      onClick={() =>
+                        window.open(
+                          "https://capstoneprojectgmailclonefrontend.netlify.app/",
+                          "_blank"
+                        )
+                      }
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <MdKeyboardDoubleArrowDown
+          className="icon arrow"
+          onClick={navigateToExperience}
+        />
       </section>
 
       <section id="experience">
@@ -234,9 +547,10 @@ const App = () => {
             </div>
           </div>
         </div>
-        <MdKeyboardDoubleArrowDown 
-        className="icon arrow"
-        onClick={navigateToSkills} />
+        <MdKeyboardDoubleArrowDown
+          className="icon arrow"
+          onClick={navigateToSkills}
+        />
       </section>
 
       <section id="skills">
@@ -264,223 +578,22 @@ const App = () => {
               "Frontend & Backend Integration",
               "RESTful API Management",
               "Testing & Debugging",
-              "Database Management"
-
+              "Database Management",
             ].map((skill, index) => (
               <article key={skill} className="skill-item">
-                <BsShieldFillPlus className="icon" style={{color:'#3B4D61'}}/>
+                <BsShieldFillPlus
+                  className="icon"
+                  style={{ color: "#3B4D61" }}
+                />
                 <h3>{skill}</h3>
               </article>
             ))}
           </div>
         </div>
-        <MdKeyboardDoubleArrowDown 
-        className="icon arrow"
-        onClick={navigateToProjects} />
-      </section>
-
-      <section id="projects">
-        <p className="section__text__p1">Browse My Recent</p>
-        <h1 className="title">Projects</h1>
-        <div className="experience-details-container">
-          <div className="project-scroll-container">
-            {/* Project Card 1 */}
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/jtvr7em6nqhpdk8phlxg.png" alt="Project 1" className="project-img" />
-                <div className="project-info">
-                  <h2 className="experience-sub-title project-title">
-                    Job Seeking App
-                  </h2>
-                  <div className="btn-container">
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/JobSeekingApp-Frontend",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Frontend Code
-                    </button>
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/JobSeekerApp-Backend",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Backend Code
-                    </button>
-                    <button
-                    style={{backgroundColor:'#353535',color:'white'}}
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://jobseekingapp-frontend.netlify.app",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Card 2 */}
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/kurcdxielrepea8qeibk.png" alt="Project 2" className="project-img" />
-                <div className="project-info">
-                  <h2 className="experience-sub-title project-title">
-                    PickYourStay
-                  </h2>
-                  <div className="btn-container">
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Booking-App---MERN-Stack---Frontend",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Frontend Code
-                    </button>
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Booking-MERN-Stack-App---Backend",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Backend Code
-                    </button>
-                    <button
-                      style={{backgroundColor:'#353535',color:'white'}}
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://bookingmernapp.netlify.app/",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Card 3 */}
-
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697406/portfolio/oauyb8xmpkcjkt4f8efp.png" alt="Project 3" className="project-img" />
-                <div className="project-info">
-                  <h2 className="experience-sub-title project-title">
-                    Ecommerce App
-                  </h2>
-                  <div className="btn-container">
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Ecommerce-MERN-Application---Client",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Frontend Code
-                    </button>
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Ecommerce-MERN-Application---Server",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Backend Code
-                    </button>
-                    <button
-                    style={{backgroundColor:'#353535',color:'white'}}
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://ecommerceapp-mernstack.netlify.app/",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Project Card 4 */}
-            <div className="details-container color-container">
-              <div className="article-container">
-                <img src="https://res.cloudinary.com/dcq6ethny/image/upload/v1727697405/portfolio/iejzpaf2aflvxegtw3sb.png" alt="Project 4" className="project-img" />
-                <div className="project-info">
-                  <h2 className="experience-sub-title project-title">
-                    Gmail Clone
-                  </h2>
-                  <div className="btn-container">
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Capstone-Project-Gmail-Clone-Front-End",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Frontend Code
-                    </button>
-                    <button
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://github.com/hnasreen/Capstone-Project---Gmail-Clone---Backend",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Backend Code
-                    </button>
-                    <button
-                    style={{backgroundColor:'#353535',color:'white'}}
-                      className="btn btn-color-2 project-btn"
-                      onClick={() =>
-                        window.open(
-                          "https://capstoneprojectgmailclonefrontend.netlify.app/",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <MdKeyboardDoubleArrowDown 
-        className="icon arrow"
-        onClick={navigateToContact} />
+        <MdKeyboardDoubleArrowDown
+          className="icon arrow"
+          onClick={navigateToContact}
+        />
       </section>
 
       <section id="contact">
@@ -488,7 +601,7 @@ const App = () => {
         <h1 className="title">Contact Me</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
-          <MdEmail className="icon contact-icon" style={{color:'black'}}/>
+            <MdEmail className="icon contact-icon" style={{ color: "black" }} />
             <p>
               <a href="mailto:hnasreen1993@gmail.com">hasreen1993@gmail.com</a>
             </p>
